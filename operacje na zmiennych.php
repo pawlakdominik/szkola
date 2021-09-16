@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <body>
@@ -44,7 +43,40 @@ else{
 echo "Różne";}
 
 echo gettype($x);
-echo gettype($y);
+echo gettype($y). '<hr>';
+
+/*
+postinkrementacja $x++
+preinkrementacja ++$x
+postinkrementacja $x--
+predekrementacja --$x
+*/
+
+$x=10;
+$x++;
+echo $x; //11
+$x=$x++;
+echo $x; //11
+$y=$x++;
+echo $x; //12
+echo $y; //11
+
+
+//zadanie
+$x=1;
+echo $x; //1
+$x=$x++;
+echo $x; //1
+$x=++$x; 
+echo $x; //2
+$y=++$x;
+echo $x; //3
+echo $y; //3
+$y=$x++;
+echo $x; //4
+echo $y; //3
+
+
 ?> 
 
 </body>
